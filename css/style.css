@@ -1,0 +1,106 @@
+.nav-menu {
+  width: 100%;
+}
+
+.nav-menu ul .home {
+  background: #2ea1f8;
+}
+
+.nav-menu ul,
+.nav-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  float: left;
+}
+
+.nav-menu ul li:hover {
+  position: relative;
+}
+
+.nav-menu ul ul {
+  position: absolute;
+  left: 0;
+  top: 106%;
+  width: 100%;
+  min-width: 200px;
+  visibility: hidden;
+  transition: background-color 1s ease;
+}
+
+.nav-menu ul ul li {
+  float: none;
+}
+
+.nav-menu ul ul ul {
+  top: 15%;
+  left: 95%;
+  z-index: 10;
+}
+
+.nav-menu ul li:hover > ul {
+  visibility: visible;
+}
+
+.nav-menu a {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+.nav-menu {
+  background-color: #3d3c3c;
+  border-bottom: 3px solid #2ea1f8;
+  font-size: 13px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.nav-menu:after,
+.nav-menu ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav-menu a {
+  background-color: #3d3c3c;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.nav-menu ul {
+  text-transform: uppercase;
+}
+
+.nav-menu ul ul {
+  min-width: 200px;
+}
+
+.nav-menu ul ul a {
+  background-color: #2ea1f8;
+  color: #ffffff;
+  border: 1px solid #14639b;
+  padding: 15px 20px;
+}
+
+.nav-menu > ul > li > a {
+  line-height: 50px;
+}
+
+.nav-menu ul ul li:hover > a {
+  background-color: #2477b7;
+}
+
+.nav-menu ul li:hover > a,
+.nav-menu ul li.active > a {
+  background-color: #2ea1f8;
+  color: #ffffff;
+}
+
+.nav-menu ul li.nav-submenu > a:after {
+  content: "+";
+  margin-left: 5px;
+}
