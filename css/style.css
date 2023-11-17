@@ -17,18 +17,17 @@
   float: left;
 }
 
-.nav-menu ul li:hover {
-  position: relative;
-}
-
 .nav-menu ul ul {
   position: absolute;
   left: 0;
-  top: 106%;
+  top: 100%;
   width: 100%;
   min-width: 200px;
   visibility: hidden;
-  transition: background-color 1s ease;
+}
+
+.nav-menu ul li:hover {
+  position: relative;
 }
 
 .nav-menu ul ul li {
